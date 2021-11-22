@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="genMVC">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/genMVC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

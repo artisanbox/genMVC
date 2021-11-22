@@ -8,7 +8,7 @@
 ## Controller
 - 控制层, 通过控制台输入执行指定函数, 并自动将输入传给函数参数
 ## Mapper
-- 数据库映射, 自动生成 SQL 语句
+- 数据库映射, 通过继承 BaseMapper 自动生成 SQL 语句
 ## Service
 - 服务层, 通过简单 @Aspect 注释自动实现拦截
 ## Model
@@ -23,12 +23,12 @@
 <dependency>
   <groupId>cn.juantu.vip</groupId>
   <artifactId>genMVC</artifactId>
-  <version>2.1</version>
+  <version>2.2</version>
 </dependency>
 ```
 
 ## jar 包
-- 通过 release 下载https://github.com/artisanbox/genMVC/releases/tag/Jar
+- 通过 release 下载
 
 
 # Demo
