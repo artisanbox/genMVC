@@ -1,4 +1,4 @@
-# genMVC v2.2.1 - 好用的 MVC 框架
+# genMVC v2.2.2 - 好用的 MVC 框架
 - 基于教学的 MVC 框架, MySQL 作为数据库
 - 学习本框架对 Java 基本知识有更全面的理解和认识
 - 利用反射, 注释, 泛型等常见知识实现框架
@@ -23,7 +23,7 @@
 <dependency>
   <groupId>cn.juantu.vip</groupId>
   <artifactId>genMVC</artifactId>
-  <version>2.2.1</version>
+  <version>2.2.2</version>
 </dependency>
 ```
 
