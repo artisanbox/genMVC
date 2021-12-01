@@ -1,8 +1,8 @@
-# genMVC v2.2.2 - 好用的 MVC 框架
+# genMVC v2.2.3 - 好用的 MVC 框架
 - 基于教学的 MVC 框架, MySQL 作为数据库
 - 学习本框架对 Java 基本知识有更全面的理解和认识
 - 利用反射, 注释, 泛型等常见知识实现框架
-- 扩展性高, 后期可利用 Socket 实现自己的 HTTP 服务器
+- 扩展性高, 可利用 Socket 或 Servlet 实现自己的 HTTP 框架
 
 # 框架结构
 ### Controller
@@ -23,14 +23,41 @@
 <dependency>
   <groupId>cn.juantu.vip</groupId>
   <artifactId>genMVC</artifactId>
-  <version>2.2.2</version>
+  <version>2.2.3</version>
 </dependency>
 ```
 
 ### jar 包
-- 通过 release 下载
+- https://repo1.maven.org/maven2/cn/juantu/vip/genMVC/2.2.3/genMVC-2.2.3.jar
+
+# Demo 快速上手
+### 前言
+  - 通过最新 demo 项目即可学习
+  
+  - 也提供了对应的 maven demo 项目
 
 
-# Demo
-- 通过 /demo 目录内置项目即可学习
-- 也提供了对应的 maven demo 项目
+### 项目结构
+- src
+  - userDemo (项目包名)
+    - aspect (切面 拦截噗器)
+    - controller (控制层)
+    - mapper (数据库映射)
+    - model (模型)
+    - service (服务层)
+    - Main.java (项目运行入口)
+  - application.properties (配置文件)
+
+### 项目启动
+- 首先利用 test.sql 文件恢复数据库 
+- 在 application.properties 配置数据库
+- 把 lib 下的 jar 包加入项目 (maven 项目改为引入依赖)
+- 运行 Main.java
+
+### 项目说明
+- 读取相关配置信息
+- 扫描项目路径下的所有 带有 @Controller 的类进行初始化, 放入 genMVC 管理的容器中
+- 并将 Controller 中带有 @Inject 的属性进行自动注入到 Controller 中
+
+# 其他
+开 issue 即可
